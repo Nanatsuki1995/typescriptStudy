@@ -1,0 +1,28 @@
+.g-side-toolbar{
+    width: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 29px;
+    top: 35px;
+    border-top: 1px #000 solid;
+    border-bottom: 1px #000 solid;
+    z-index: 1;
+    background: #333;
+    .u-item{
+        text-align: center;
+        height: 40px;
+        border-bottom: 1px rgba(0,0,0,.5) solid;
+        line-height: 40px;
+        cursor: pointer;
+        i{
+            color: #ccc;
+            font-size: 22px;
+        }
+        
+    }
+    .z-cur{
+       i{
+        color: #ff6600;  
+       } 
+    }
+}

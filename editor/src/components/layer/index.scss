@@ -1,0 +1,94 @@
+.m-layer{
+    position: absolute;
+    width: 200px;
+    top: 35px;
+    bottom: 29px;
+    right: 40px;
+    border-top: 1px #000 solid;
+    border-right: 1px #000 solid;
+    border-bottom: 1px #000 solid;
+    background: #333;
+    font-size: 12px;
+    color:#ccc;
+    border-left: 1px #000 solid;
+    .m-title{
+        height: 26px;
+        line-height: 26px;
+        border-bottom: 1px #000 solid;
+        span{
+            
+            padding: 0 10px;
+            border-right: 1px #000 solid;
+            display: inline-block;
+            background: rgba(0,0,0,.3)
+        }
+    }
+    .m-btn-group{
+        padding: 10px;
+        display: flex;
+        border-bottom: 1px #000 solid;
+        .u-btn{
+            text-align: center;
+            flex: 1 auto; 
+            width: 20px;
+            height: 22px;
+            line-height: 22px;
+            margin: 0 2px;
+            border: 1px #444 solid;
+             background: rgba(0,0,0,.1);
+            border-radius: 2px;
+            cursor: pointer;
+            &:hover,z-cur{
+                color: #ff6600;
+                background: rgba(0,0,0,.15)
+            }
+        }
+    }
+    .m-layer-tree{
+        position: relative;
+        &>.m-layer-item{
+            cursor: pointer;
+            min-height: 25px;
+            line-height: 25px;
+           
+           
+            .u-visible{
+                text-align: center;
+                border-right: 1px #000 solid;
+                width: 30px;
+                display: inline-block;
+                position: absolute;
+                left: 0;
+            }
+            span{
+                padding-left: 40px; 
+                display: inline-block;
+                &>.m-layer-item{
+                    cursor: pointer;
+                    padding-left: 0px!important; 
+                    span{
+                        padding-left:10px;
+                    }   
+                    &::after{
+                        content: '';
+                        border-bottom: 1px rgba(0,0,0,.3) solid;
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        height: 25px;
+                        
+                    }
+                }
+            }
+            &::after{
+                content: '';
+                border-bottom: 1px rgba(0,0,0,.3) solid;
+                position: absolute;
+                left: 0;
+                right: 0;
+                height: 25px;
+                
+            }
+        }
+    }
+}
